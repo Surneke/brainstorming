@@ -6,9 +6,7 @@ const port = 8000;
 
 app.use(cors());
 app.get("/users" , (req,res) => {
-    console.log(data)
     res.status(200).send(data)
-
 });
 app.listen(port,()=> {
     console.log(`Listening on port ${port}`)
